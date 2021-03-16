@@ -24,18 +24,15 @@ body {
 	overflow: auto;
 	font-family: 'Open Sans', sans-serif;
 	color: #fff;
-	
+	background: #0F2027;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 	font-size: 18px;
-	background-image: url('https://i.ibb.co/vszmTR9/20180926-PHT14440-pl.jpg');
 	background-size: 100% 100%;
 	text-align:center;
 	letter-spacing:1.2px;
-	/*
-	background: #331952;
-	background: #2193b0;  /* fallback for old browsers */
-/*	background: -webkit-linear-gradient(to right, #6dd5ed, #2193b0);  /* Chrome 10-25, Safari 5.1-6 */
-/*	background: linear-gradient(to right, #6dd5ed, #2193b0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-/*	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3E1D6D', endColorstr='#092756',GradientType=1 );*/
+
 }
 .login {
 	position: absolute;
