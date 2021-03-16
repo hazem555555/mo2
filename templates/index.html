@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>CO2 Emission Predictor</title>
+  <title>Meet Our Detector || KNOW YOUR WATER</title>
   <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
 <link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
 <link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
@@ -18,26 +18,21 @@
  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
  <div class="topnav" id="myTopnav">
-   <a href="#" class="active">TEAM NAME</a>
-   <a href="#">Prediction</a>
-   <a href="http://prediction.c1.biz/portfolio.html ">Portfolio</a>
-   <a href="http://prediction.c1.biz/poster.html">Poster</a>
-   <a href="http://prediction.c1.biz/contact.html">Contact</a>
+  <a href="#" class="active">Water protectors</a>
  
  </div>
   <!--nav bar end-->
   
   
    <div class="login">
-    <h1>Predict Amount Of CO<sub>2</sub> Emitted By Vehicles </h1>
-    <h3 style="padding: 10px;"> Enter the following values to predict the pollution level</h3>
+    <h1> Predict the Water Quality Index of the sample</h1>
+    <h3 style="padding: 10px;"> Enter the following values to predict the WQI</h3>
     <form action="{{ url_for('predict')}}"method="post" style=" margin: auto;width: 100%;border: 3px solid rgba(0, 0, 0, 0);padding: 10px;">
-      <input type="float" min="0" name="enginesize" placeholder="Engine Size (L)" required="required" />
-      <input type="float" min="0"name="cylinders" placeholder="Number Of Cylinders " required="required" />
-      <input type="float" min="0" name="fuel" placeholder="Fuel Type (80,92,95) " required="required" />
-      <input type="float" min="0" name="enginesize" placeholder="Engine Size (L)" required="required" />
-      <input type="float" min="0"name="cylinders" placeholder="Number Of Cylinders " required="required" />
-      <input type="float" min="0" name="fuel" placeholder="Fuel Type (80,92,95) " required="required" />
+      <input class="FirstInput" type="float" min="0" name="enginesize" placeholder="Temperature (T)" required="required" />
+      <input type="float" min="0"name="cylinders" placeholder="Dissolved Oxygen (DO)" required="required" />
+      <input type="float" min="0" name="fuel" placeholder="Power of Hydrogen (PH)" required="required" />
+      <input type="float" min="0" name="enginesize" placeholder="Biochemical Oxygen Demand (BOD)" required="required" />
+      <input type="float" min="0"name="cylinders" placeholder="Nitrated (NO3)" required="required" />
       <button type="submit" class="btn">Predict</button>
     </form>
      {{ prediction_text }}
